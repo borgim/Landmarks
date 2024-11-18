@@ -29,15 +29,31 @@
 		2C81CD802CAB8F74005C7A7F /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2C8A77A92CAC8D6600CE5DCA /* Exceptions for "Landmarks" folder in "Landmarks" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LandmarksTests/LandmarksTests.swift,
+			);
+			target = 2C81CD652CAB8F73005C7A7F /* Landmarks */;
+		};
+		2C8A77AA2CAC8D6600CE5DCA /* Exceptions for "Landmarks" folder in "LandmarksTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LandmarksTests/LandmarksTests.swift,
+			);
+			target = 2C81CD752CAB8F74005C7A7F /* LandmarksTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2C81CD682CAB8F73005C7A7F /* Landmarks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2C8A77A92CAC8D6600CE5DCA /* Exceptions for "Landmarks" folder in "Landmarks" target */,
+				2C8A77AA2CAC8D6600CE5DCA /* Exceptions for "Landmarks" folder in "LandmarksTests" target */,
+			);
 			path = Landmarks;
-			sourceTree = "<group>";
-		};
-		2C81CD792CAB8F74005C7A7F /* LandmarksTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LandmarksTests;
 			sourceTree = "<group>";
 		};
 		2C81CD832CAB8F74005C7A7F /* LandmarksUITests */ = {
@@ -76,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				2C81CD682CAB8F73005C7A7F /* Landmarks */,
-				2C81CD792CAB8F74005C7A7F /* LandmarksTests */,
 				2C81CD832CAB8F74005C7A7F /* LandmarksUITests */,
 				2C81CD672CAB8F73005C7A7F /* Products */,
 			);
@@ -129,9 +144,6 @@
 			);
 			dependencies = (
 				2C81CD782CAB8F74005C7A7F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2C81CD792CAB8F74005C7A7F /* LandmarksTests */,
 			);
 			name = LandmarksTests;
 			packageProductDependencies = (
